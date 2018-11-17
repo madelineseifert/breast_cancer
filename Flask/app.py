@@ -11,8 +11,8 @@ db = SQLAlchemy(app)
 
 class Patient(db.Model):
       id = db.Column(db.Integer, primary_key = True)
-      radius_mean = db.Column(db.Integer)
-      texture_mean = db.Column(db.Integer)
+      radius_mean = db.Column(db.Numeric)
+      texture_mean = db.Column(db.Numeric)
 
       def __init__(self,radius_mean,texture_mean):
             self.radius_mean = radius_mean
