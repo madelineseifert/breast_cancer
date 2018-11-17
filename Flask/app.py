@@ -2,10 +2,12 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import request, redirect, render_template, url_for
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///breast_cancer.sqlite'
 app.debug = True
 db = SQLAlchemy(app)
+
 
 class Patient(db.Model):
       id = db.Column(db.Integer, primary_key = True)
@@ -19,9 +21,11 @@ class Patient(db.Model):
       def __repr__(self):
             return '<Test %r>' %  self.diagnosis
 
+
 @app.route('/')
 def index():
-   return render_template('add_patient_data.html')
+      # myPatient = Patient.query.all()
+      return render_template('add_patient_data.html')
 
 
 @app.route('/post_patient_data',methods =['POST']) 
@@ -30,6 +34,13 @@ def post_patient_data():
       db.session.add(patient)
       db.session.commit() 
       return redirect(url_for('index'))
+
+
+@app.route('/see_data') 
+def see_data():
+      myPatient = Patient.query.all()
+      return render_template('see_data.html' , myPatient = myPatient)     
+
 
 if __name__ == '__main__':
    app.run(debug = True)

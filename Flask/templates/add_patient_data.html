@@ -7,11 +7,17 @@
 
 <body>
     <form method = "POST" action = "/post_patient_data">
-        <label>radius_mean</label>
-        <input id = "radius_mean" name = "radius_mean" type = "number" />
-        <label>texture_mean</label>
-        <input id = "texture_mean" name = "texture_mean" type = "number" /> 
-        <input type = "submit" />               
+        <ul style="list-style-type:none">
+            <li><label>radius_mean</label></li>
+            <input id = "radius_mean" name = "radius_mean" type = "number" />
+            <li><label>texture_mean</label></li>
+            <input id = "texture_mean" name = "texture_mean" type = "number" /> 
+            <input type = "submit" />  
+        </ul>                 
     </form>
+
+    <!-- {% for patient in myPatient %}
+        <li>{{ patient.id, patient.radius_mean , patient.texture_mean }}</li>
+    {% endfor %} -->
 </body>
 </html>
