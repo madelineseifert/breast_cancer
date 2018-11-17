@@ -7,7 +7,12 @@
 
 <body>
     {% for patient in myPatient %}
-        <li>id: {{ patient.id }} || radius_mean: {{ patient.radius_mean }} || texture_mean: {{ patient.texture_mean }}</li>
+        <li>    id: {{ patient.id }} 
+            ||  radius_worst: {{ patient.radius_worst }} 
+            ||  concave_points_worst: {{ patient.concave_points_worst }}
+            ||  area_worst: {{ patient.area_worst}}
+            ||  perimeter_worst: {{ patient.perimeter_worst }}
+        </li>
     {% endfor %}
 
 </body>

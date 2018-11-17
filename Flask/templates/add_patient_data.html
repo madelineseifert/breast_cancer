@@ -8,10 +8,19 @@
 <body>
     <form method = "POST" action = "/post_patient_data">
         <ul style="list-style-type:none">
-            <li><label>radius_mean</label></li>
-            <input id = "radius_mean" name = "radius_mean" type = "float" />
-            <li><label>texture_mean</label></li>
-            <input id = "texture_mean" name = "texture_mean" type = "float" /> 
+          
+            <li><label>radius_worst</label></li>
+            <input id = "radius_worst" name = "radius_worst" type = "float" />
+         
+            <li><label>concave_points_worst</label></li>
+            <input id = "concave_points_worst" name = "concave_points_worst" type = "float" />
+         
+            <li><label>area_worst</label></li>
+            <input id = "area_worst" name = "area_worst" type = "float" />                        
+         
+            <li><label>perimeter_worst</label></li>
+            <input id = "perimeter_worst" name = "perimeter_worst" type = "float" /> 
+         
             <input type = "submit" />  
         </ul>                 
     </form>
