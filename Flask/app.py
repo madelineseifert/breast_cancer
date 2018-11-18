@@ -2,11 +2,11 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import request, redirect, render_template, url_for
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database/breast_cancer.sqlite'
 app.debug = True
 db = SQLAlchemy(app)
+
 
 
 class Patient(db.Model):
@@ -16,7 +16,7 @@ class Patient(db.Model):
       area_worst = db.Column(db.Float)
       perimeter_worst = db.Column(db.Float)
 
-      def __init__(self,radius_worst,concave_points_worst,area_worst,perimeter_worst):
+      def __init__(self, radius_worst, concave_points_worst, area_worst,perimeter_worst):
             self.radius_worst = radius_worst
             self.concave_points_worst = concave_points_worst
             self.area_worst = area_worst
@@ -28,7 +28,6 @@ class Patient(db.Model):
 
 @app.route('/')
 def index():
-      # myPatient = Patient.query.all()
       return render_template('add_patient_data.html')
 
 
