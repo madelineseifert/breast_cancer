@@ -8,7 +8,6 @@ app.debug = True
 db = SQLAlchemy(app)
 
 
-
 class Patient(db.Model):
       id = db.Column(db.Integer, primary_key = True)
       radius_worst = db.Column(db.Float)
