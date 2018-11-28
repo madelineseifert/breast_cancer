@@ -65,12 +65,17 @@ def predict_tumor():
       print("test2")
       with graph.as_default():
             yhat = model.predict_classes(patient_test_scaled)
-            print("test3")
 
-      prediction_labels = label_encoder.inverse_transform(yhat)
+
+      prediction_label = label_encoder.inverse_transform(yhat)
                   #result = patient
+      if prediction_label > 0.5:
+            prediction = 'Malignant'
+      else:
+            prediction = 'Benign'
 
-      return render_template('prediction.html', result=prediction_labels)
+
+      return render_template('prediction.html', result=prediction)
 
 @app.route('/see_data') 
 def see_data():
