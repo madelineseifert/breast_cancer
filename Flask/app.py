@@ -55,7 +55,7 @@ def predictor():
       return render_template('predictor.html')
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=['POST'])
 def predict_tumor():
       parameters = []
       parameters.append(float(request.form['radius_worst']))
