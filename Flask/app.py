@@ -95,7 +95,11 @@ def funding():
 
 @app.route('/facts') 
 def facts():
-      return render_template('facts.html')    
+      return render_template('facts.html')   
+
+@app.route('/visuals') 
+def visuals():
+      return render_template('visuals.html')  
 
 
 if __name__ == '__main__':
