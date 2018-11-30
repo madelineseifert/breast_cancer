@@ -89,6 +89,14 @@ def see_data():
       myPatient = Patient.query.all()
       return render_template('see_data.html' , myPatient = myPatient)     
 
+@app.route('/funding') 
+def funding():
+      return render_template('funding.html')    
+
+@app.route('/facts') 
+def facts():
+      return render_template('facts.html')    
+
 
 if __name__ == '__main__':
    app.run(debug = True)
