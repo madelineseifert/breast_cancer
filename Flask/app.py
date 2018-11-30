@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import *
 from flask_sqlalchemy import SQLAlchemy
 from flask import request, redirect, render_template, url_for
 from keras.models import load_model
@@ -34,7 +35,7 @@ class Patient(db.Model):
 
 @app.route('/')
 def index():
-      return render_template('add_patient_data.html')
+      return render_template('index.html')
 
 
 @app.route('/post_patient_data',methods =['GET', 'POST']) 
@@ -48,6 +49,11 @@ def post_patient_data():
       db.session.commit()
 
       return redirect(url_for('index'))
+
+@app.route('/predictor')
+def predictor():
+      return render_template('predictor.html')
+
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_tumor():
@@ -76,6 +82,7 @@ def predict_tumor():
 
 
       return render_template('prediction.html', result=prediction)
+      # return jsonify(result=prediction)
 
 @app.route('/see_data') 
 def see_data():
