@@ -71,7 +71,7 @@
 											<nav class="main_nav">
 												<ul class="d-flex flex-row align-items-center justify-content-start">
 													<li><a href="/">Home</a></li>
-													<li class="active"><a href="about.html">Visuals</a></li>
+													<li class="active"><a href="/visuals">Visuals</a></li>
 													<li><a href="/predictor">Predictor</a></li>
 													<li><a href="/facts">Facts</a></li>
 													<li><a href="/funding">Funding</a></li>
@@ -110,11 +110,13 @@
 
 	<div class="about">
 		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-						<form method = "POST" action = "/predict">
-							Result: {{ result }}
-						</form>
+			<div class="row about_row row-eq-height">
+				<div class="logo col text-center">
+					<form method = "POST" action = "/predict">
+						<div class="result" style="color:#404040" >
+							<font size="12"> Result: {{ result }}</font>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="row about_row row-eq-height">
@@ -136,87 +138,10 @@
 					<div class="about_image"><img src="static/images/about_1.jpg" alt=""></div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col">
-					<div class="button about_button ml-auto mr-auto"><a href="#"><span>call now</span><span>call now</span></a></div>
-				</div>
-			</div>
 		</div>
 	</div>
 
-	<!-- Milestones -->
 
-	<div class="milestones">
-		<div class="container">
-			<div class="row">
-
-				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
-					<div class="milestone d-flex flex-row align-items-center justify-content-start">
-						<div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="static/images/icon_7.svg" alt=""></div>
-						<div class="milestone_content">
-							<div class="milestone_counter" data-end-value="365">0</div>
-							<div class="milestone_text">Days a year</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
-					<div class="milestone d-flex flex-row align-items-center justify-content-start">
-						<div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="static/images/icon_6.svg" alt=""></div>
-						<div class="milestone_content">
-							<div class="milestone_counter" data-end-value="25" data-sign-after="k">0</div>
-							<div class="milestone_text">Patients a year</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
-					<div class="milestone d-flex flex-row align-items-center justify-content-start">
-						<div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="static/images/icon_8.svg" alt=""></div>
-						<div class="milestone_content">
-							<div class="milestone_counter" data-end-value="125">0</div>
-							<div class="milestone_text">Amazing Doctors</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
-					<div class="milestone d-flex flex-row align-items-center justify-content-start">
-						<div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="static/images/icon_9.svg" alt=""></div>
-						<div class="milestone_content">
-							<div class="milestone_counter" data-end-value="12" data-sign-after="k">0</div>
-							<div class="milestone_text">Lab Results</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- CTA -->
-
-	<div class="cta">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cta_1.jpg" data-speed="0.8"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
-						<div class="cta_content text-xl-left text-center">
-							<div class="cta_title">Make an appointment with one of our professional Doctors.</div>
-							<div class="cta_subtitle">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</div>
-						</div>
-						<div class="button cta_button ml-xl-auto"><a href="#"><span>call now</span><span>call now</span></a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- Footer -->
 
@@ -230,7 +155,7 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_about">
 							<div class="logo">
-								<a href="#">health<span>+</span></a>	
+								<a href="/">Save the Owls</a>	
 							</div>
 							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
 							<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -241,21 +166,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 					
 					<!-- Footer Contact -->
-					<div class="col-lg-5 footer_col">
-						<div class="footer_contact">
-							<div class="footer_contact_title">Quick Contact</div>
-							<div class="footer_contact_form_container">
-								<form action="#" class="footer_contact_form" id="footer_contact_form">
-									<div class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
-										<input type="text" class="footer_contact_input" placeholder="Name" required="required">
-										<input type="email" class="footer_contact_input" placeholder="E-mail" required="required">
-									</div>
-									<textarea class="footer_contact_input footer_contact_textarea" placeholder="Message" required="required"></textarea>
-									<button class="footer_contact_button">send message</button>
-								</form>
-							</div>
-						</div>
-					</div>
 
 				</div>
 			</div>
