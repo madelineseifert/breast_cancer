@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="static/styles/bootstrap4/bootstrap.min.css">
 <link href="static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="static/styles/contact.css">
+<link rel="stylesheet" type="text/css" href="static/styles/elements.css">
 <link rel="stylesheet" type="text/css" href="static/styles/contact_responsive.css">
 </head>
 <body>
@@ -108,29 +109,137 @@
                 <div class="row about_row row-eq-height">
                     <div class="col-lg-4">
                         <div class="logo">
-                            <a href="#">Interpreting Results</a>	
+                            <a href="#">About our Model</a>	
                         </div>
-                        <div class="about_text_highlight">Our model has an accuracy of 93.71%.</div>
                         <div class="about_text">
-                            <p>This algorithim is for research purposes only and should not be used in lieu of a real diagnosis.</p>
+                            <p>Only four user inputs are required for our tumor diagnosis model. These inputs can be prepared by imaging a microscope slide containing fluid drawn via FNA from a breast tumor. </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="about_text_2">
-                            <p>Donec lorem maximus malesuada lorem max imus mauris. Proin vitae tortor nec risus tristiq ue efficitur. Aliquam luctus est urna, id aliqu am orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna. Cras quis ante nibh. Proin tincidunt gravida interdum. Proin sed urna mauris.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="about_image"><img src="static/images/about_1.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="button about_button ml-auto mr-auto"><a href="#"><span>call now</span><span>call now</span></a></div>
+                        <div class="about_image"><img src="static/images/bcancer.jpg" alt="" height="176" width="284"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+        <div class="elements_tabs">
+                <div class="elements_title">Variable Information</div>
+                <div class="tabs_content">
+                    <div class="row">
+                        <div class="col-lg-5">
+
+                            <!-- Tabs -->
+                            <div class="tabs d-flex flex-row align-items-center justify-content-start flex-wrap">
+                                <div class="tab active">
+                                    <div class="tab_title">Radius</div>
+                                    <!-- <div class="tab_text">Lorem ipsum dolor sit amet, consectetur adipis voelta.</div> -->
+                                </div>
+                                <div class="tab">
+                                    <div class="tab_title">Concave Points</div>
+                                    <!-- <div class="tab_text">Lorem ipsum dolor sit amet, consectetur adipis voelta.</div> -->
+                                </div>
+                                <div class="tab">
+                                    <div class="tab_title">Area</div>
+                                    <!-- <div class="tab_text">Lorem ipsum dolor sit amet, consectetur adipis voelta.</div> -->
+                                </div>
+                                <div class="tab">
+                                    <div class="tab_title">Perimeter</div>
+                                    <!-- <div class="tab_text">Lorem ipsum dolor sit amet, consectetur adipis voelta.</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+
+                            <!-- Panels -->
+                            <div class="tab_panels">
+
+                                <!-- Panel -->
+                                <div class="tab_panel active">
+                                    <div class="tab_panel_content">
+                                        <div class="tab_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="tab_list_title">The radius of an individual nucleus is measured by averaging the length of the radial line segments
+                                                        defined by the centroid of the nucleus.</div>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <div class="tab_list_title">Gastroenterology</div>
+                                                    <!-- <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div> -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel -->
+                                <div class="tab_panel active">
+                                    <div class="tab_panel_content">
+                                        <div class="tab_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="tab_list_title">In order to capture shape information we measure the number of concavities
+                                                        or indentations in a cell nucleus.</div>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <div class="milestone_image">
+                                                        <img src="static/images/concave.jpg" alt="" class="center">
+                                                    </div>
+                                                    <!-- <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div> -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel -->
+                                <div class="tab_panel active">
+                                    <div class="tab_panel_content">
+                                        <div class="tab_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="tab_list_title">Nuclear area is measured simply by counting the number of pixels on the interior of the nucleus.</div>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <div class="tab_list_title">Gastroenterology</div>
+                                                    <!-- <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div> -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel -->
+                                <div class="tab_panel active">
+                                    <div class="tab_panel_content">
+                                        <div class="tab_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="tab_list_title">The total distance of the nuclear perimeter.</div>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <div class="tab_list_title">Gastroenterology</div>
+                                                    <!-- <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div> -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+
     
 
 	<!-- Contact -->
@@ -140,7 +249,7 @@
 			<div class="row">
 
 				<!-- Contact form -->
-				<div class="col-lg-8 contact_col">
+				<div class="col-lg-4 contact_col">
 					<div class="contact_form">
 						<div class="contact_title">Prediction Input</div>
 						<div class="contact_form_container">
@@ -149,21 +258,17 @@
 								<input type="text" id="concave_points_worst" class="contact_input" name = "concave_points_worst" placeholder="Number of Concave Points" required="required">
                                 <input type="text" id="area_worst" class="contact_input" name = "area_worst" placeholder="Area" required="required">
                                 <input type="text" id="perimeter_worst" class="contact_input" name = "perimeter_worst" placeholder="Perimeter" required="required">
-								<button class="contact_button" id="contact_button">send message</button>
+								<button class="contact_button" id="contact_button">Get Diagnosis</button>
 							</form>
 						</div>
 					</div>
                 </div>
-                <!-- <div class="col-lg-8 contact_col">
-                        <div class="contact_form">
-                            <div class="contact_title">Prediction Input</div>
-                            <div class="contact_form_container">
-                                <form method = "POST" action="/predict" id="contact_form" class="contact_form">
-                                    Result: {{ result }}
-                                </form>
-                            </div>
-                        </div>
-                    </div> -->
+				<div class="col-lg-4 contact_col">
+					<div class="contact_form">
+						<div class="image"><img src="static/images/nuclei.jpg" alt=""></div>
+						</div>
+					</div>
+                </div>
 
 			</div>
 		</div>
@@ -172,7 +277,7 @@
 	<!-- Footer -->
 
 	<footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/footer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="static/images/footer.jpg" data-speed="0.8"></div>
 		<div class="footer_content">
 			<div class="container">
 				<div class="row">
@@ -180,10 +285,7 @@
 					<!-- Footer About -->
 					<div class="col-lg-3 footer_col">
 						<div class="footer_about">
-							<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</div>
+
 						</div>
 					</div>
 				</div>
@@ -197,10 +299,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<nav class="footer_nav">
 								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
 									<li class="active"><a href="/">Home</a></li>
-									<li><a href="about.html">Visuals</a></li>
-									<li><a href="services.html">Predictor</a></li>
-									<li><a href="news.html">Facts</a></li>
-									<li><a href="contact.html">Funding</a></li>
+									<li><a href="/visuals">Visuals</a></li>
+									<li><a href="/predictor">Predictor</a></li>
+									<li><a href="/facts">Facts</a></li>
+									<li><a href="/funding">Funding</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -216,7 +318,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="static/styles/bootstrap4/bootstrap.min.js"></script>
 <script src="static/plugins/easing/easing.js"></script>
 <script src="static/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="static/js/contact.js"></script>
+<script src="static/plugins/greensock/TweenMax.min.js"></script>
+<script src="static/plugins/greensock/TimelineMax.min.js"></script>
+<script src="static/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="static/plugins/greensock/animation.gsap.min.js"></script>
+<script src="static/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="static/plugins/progressbar/progressbar.min.js"></script>
+<script src="static/js/elements.js"></script>
 </body>
 </html>
