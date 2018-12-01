@@ -91,15 +91,15 @@ def see_data():
 
 @app.route('/funding') 
 def funding():
-      return render_template('funding.html')    
-
-@app.route('/facts') 
-def facts():
-      return render_template('facts.html')   
+      return render_template('funding.html')   
 
 @app.route('/visuals') 
 def visuals():
       return render_template('visuals.html')  
+
+@app.route('/facts') 
+def facts():
+      return render_template('facts.html')   
 
 
 if __name__ == '__main__':
